@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { CcaBankComponent } from './cca-bank/cca-bank.component';
+import { CcaBankBranchComponent } from './cca-bank-branch/cca-bank-branch.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CcaBankComponent,
+    CcaBankBranchComponent
   ],
   imports: [
     BrowserModule
