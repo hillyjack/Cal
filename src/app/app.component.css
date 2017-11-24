@@ -1,0 +1,25 @@
+
+.header{
+    margin-left: 11%;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.wrapComponents{
+    padding-top: 3px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    background-color: lightgray;
+    flex-basis: 45% ;
+    border-radius: 15px;
+    height: auto;
+    display: flex;
+}
+
+.innerDiv{
+    margin:auto;
+}

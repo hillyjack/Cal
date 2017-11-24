@@ -1,3 +1,7 @@
-<p>
-  cca-bank-branch works!
-</p>
+
+
+<div *ngIf="BankNameWasChoosen" class="innerDiv">
+    <p>Please enter the branch number of bank {{chosenBankName}}</p>
+    <input type="number" [(ngModel)]= "bankBranchNum">
+    <button class="btn btn-primary" (click)="OnChoosingBranch()">Submit</button>
+</div>

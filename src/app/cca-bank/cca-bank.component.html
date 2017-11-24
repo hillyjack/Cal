@@ -1,3 +1,12 @@
-<p>
-  cca-bank works!
-</p>
+
+<div *ngIf="BankBranchWasNotChoosen; else BankBranchWasChoosen" class="innerDiv">
+        <p>Please enter Poalim/Leumi/Discount</p>
+        <input type="text" [(ngModel)]= "chosenBankName">
+        <button class="btn btn-primary" (click)="OnChoosingBank()">Submit</button>
+</div>
+
+<ng-template #BankBranchWasChoosen>
+    <div class="innerDiv">
+    <p class="biggerFont">You Chose <span class="bold">{{chosenBankName}}</span> Bank And Branch <span class="bold">{{bankBranchNum}}</span></p>   
+    </div>
+</ng-template>
