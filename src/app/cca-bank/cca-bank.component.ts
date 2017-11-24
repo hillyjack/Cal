@@ -29,4 +29,12 @@ export class CcaBankComponent implements OnInit {
     this.data.ChangeBankNameWasChoosen(true);
     this.data.ChangeBankName(this.chosenBankName);
   };
+
+  OnChange(){
+    this.data.ChangeBankBranchWasNotChoosen(true);
+    this.data.ChangeBankNameWasChoosen(false);
+    this.data.ChangeBankName('');
+    this.data.ChangeBranchNum(parseInt(''));
+  }
+
 }
